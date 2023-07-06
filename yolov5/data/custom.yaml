@@ -1,0 +1,7 @@
+train: /content/gdrive/MyDrive/Colab_Notebooks/pet_project_price/images/train/ 
+val: /content/gdrive/MyDrive/Colab_Notebooks/pet_project_price/images/val/ 
+test: /content/gdrive/MyDrive/Colab_Notebooks/pet_project_price/images/test/ 
+# number of classes 
+nc: 2 
+# class names 
+names: ["price", "description"]
