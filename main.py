@@ -3,6 +3,7 @@ import asyncio
 
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
+from config import TOKEN
 from register_handler.reg_callback import register_handlers_callback
 from register_handler.reg_commands import register_handlers_commands
 from register_handler.reg_message import register_handlers_message
@@ -10,7 +11,7 @@ from register_handler.reg_message import register_handlers_message
 
 
 async def main():
-    bot = Bot(token="5934854351:AAFXx19PezDkam2jLKvDPZXI-ROnvnrHE8w",
+    bot = Bot(token=TOKEN,
               parse_mode=types.ParseMode.HTML)
     storage = MemoryStorage()
     dp = Dispatcher(bot, storage=storage)
